@@ -142,7 +142,7 @@ def roulette(bet):
     print("Result: " + str(result))
     
     if call.lower() == "even":
-        if int(result) % 2 == 0:
+        if int(result) % 2 == 0 and int(result) > 0:
             money += bet
             print(f"\nCongratulations! You won ${bet}!\n")
             return bet
